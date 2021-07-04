@@ -11,21 +11,9 @@ function addItem(item) {
   return true;
 } // end function addItems
 
-/*
 // function listItems: will loop through array 'basket' by index values.
 function listItems(array) {
-  for (let i=0; i<basket.length; i++) {
-    if (i<basket.length) {
-    } // end if statement
-    return basket[i];
-  } // end for of loop
-} // end listItems
-*/
-
-function listItems(array) {
-  basket.forEach((basket) => {
-    console.log(basket);
-  });
+  basket.forEach((basket) => console.log(basket));
 } // end function listItems
 
 /*
@@ -55,25 +43,15 @@ function isFull(basket) {
 // Call functions to test:
 console.log('Empty basket:', basket);
 
+// add new items to the basket
 console.log('adding eggs to basket:', addItem('eggs'));
-console.log('Basket is:', basket);
-
 console.log('adding bacon to basket:', addItem('bacon'));
-console.log('Basket is:', basket);
-
 console.log('adding bread to basket:', addItem('bread'));
-console.log('Basket is:', basket);
-
 console.log('adding milk to basket:', addItem('milk'));
-console.log('Basket is:', basket);
-
 console.log('adding apple juice to basket:', addItem('apple juice'));
-console.log('Basket is:', basket);
-
 console.log('adding peaches to basket:', addItem('peaches'));
-console.log('Basket is:', basket);
-
-console.log('list of items:', listItems(basket));
+console.log('List of items in basket:');
+listItems(basket);
 
 /*
 console.log('Is my basket full?', isFull());
@@ -88,20 +66,14 @@ empty(basket); // emptying the basket
 // Call function to test
 console.log("Empting the basket:", basket);
 
-// Here we can add new items to the basket
+// add new items to a new basket
 console.log('New basket of groceries:');
-
 console.log('adding cherries to cherries:', addItem('cherries'));
-console.log('Basket is:', basket);
-
 console.log('adding steaks to basket:', addItem('steaks'));
-console.log('Basket is:', basket);
-
 console.log('adding spinach to basket:', addItem('spinach'));
-console.log('Basket is:', basket);
-
 console.log('adding salad dressing to basket:', addItem('salad dressing'));
-console.log('Basket is:', basket);
+console.log('List of items in basket:');
+listItems(basket);
 
 /*
 // testing to see if my basket is full:
