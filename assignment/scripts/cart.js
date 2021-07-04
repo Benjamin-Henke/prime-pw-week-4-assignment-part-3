@@ -80,6 +80,8 @@ empty(basket);
 console.log("Empting the basket:", basket);
 
 
+
+// ----Created a new basket to double check code----
 // add new items to a new basket
 console.log('New basket of groceries');
 console.log('adding cherries to basket:', addItem('cherries'));
@@ -92,6 +94,12 @@ console.log('List of items in basket:');
 listItems(basket);
 
 console.log('Is my basket full?', isFull());
+
+// Removing bread from basket and logging the new list of items
+removeItem(basket);
+console.log('list of items:');
+listItems(basket);
+
 // emptying the basket
 empty(basket);
 console.log('Emptying the basket:', basket);
